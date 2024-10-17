@@ -33,12 +33,12 @@ export class DarkWizzard extends Wizzard {
 
   public darkAttack(): void {
     console.log(
-      `${this.name} lanza un hechizo oscuro: ${this.spell} causando ${this.skillPower + this.darkPower} de daño.`
+      `${this.name} lanza un hechizo ${this.spell} causando ${this.skillPower + this.darkPower} de daño.`
     );
   }
 
 
   public defend(): void {
-    console.log(`${this.name} activa un escudo oscuro que absorbe ${this.magicShield * 1.2}% de daño.`);
+    console.log(`${this.name} activa una barrera que absorbe ${this.magicShield * 1.2}% de daño.`);
   }
 }
