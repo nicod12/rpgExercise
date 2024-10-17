@@ -16,6 +16,21 @@ export class DarkWizzard extends Wizzard {
   }
 
 
+  static evolveToDarkWizzard(wizzard: Wizzard): DarkWizzard | null {
+    if (wizzard.getLevel() >= 10) {
+      return new DarkWizzard(
+        wizzard.getName(),
+        wizzard.getLevel(),
+        wizzard.getSkillpower() * 2,
+        wizzard.getSpell(),
+        wizzard.getMagicShield() * 2,
+        25
+      );
+    }
+    console.log(`${wizzard.getName()} no tiene suficiente nivel para evolucionar.`);
+    return null;
+  }
+
   public darkAttack(): void {
     console.log(
       `${this.name} lanza un hechizo oscuro: ${this.spell} causando ${this.skillPower + this.darkPower} de daño.`
