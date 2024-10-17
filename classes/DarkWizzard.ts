@@ -3,7 +3,7 @@ import { Wizzard } from "./Wizzard";
 export class DarkWizzard extends Wizzard {
   private darkPower: number;
 
-  constructor(
+  private constructor(
     name: string,
     level: number,
     skillPower: number,
