@@ -14,7 +14,6 @@ export function tryEvolve(wizzard: Wizzard): DarkWizzard | null {
 }
 
 export function handleDarkWizzardActions(darkWizzard: DarkWizzard): void {
-  console.log(`${darkWizzard.getName()} ha evolucionado a un Mago Oscuro!`);
   darkWizzard.setSpell("Sombras oscuras");
   darkWizzard.attack();
   darkWizzard.defend();
