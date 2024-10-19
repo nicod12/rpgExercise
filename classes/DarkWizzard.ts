@@ -6,12 +6,13 @@ export class DarkWizzard extends Wizzard {
   private constructor(
     name: string,
     level: number,
+    hp: number,
     skillPower: number,
     spell: string,
     magicShield: number,
     darkPower: number
   ) {
-    super(name, level, skillPower, spell, magicShield);
+    super(name, level, hp, skillPower, spell, magicShield);
     this.darkPower = darkPower;
   }
 
@@ -21,6 +22,7 @@ export class DarkWizzard extends Wizzard {
       return new DarkWizzard(
         wizzard.getName(),
         wizzard.getLevel(),
+        wizzard.getHp(),
         wizzard.getSkillpower() * 2,
         wizzard.getSpell(),
         wizzard.getMagicShield() * 2,

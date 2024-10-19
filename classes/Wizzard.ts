@@ -5,8 +5,8 @@ export class Wizzard extends Character {
   protected spell: string;
   protected magicShield: number;
 
-  constructor(name: string, level: number, skillPower: number, spell: string, magicShield: number) {
-    super(name,);
+  constructor(name: string, level: number, hp: number, skillPower: number, spell: string, magicShield: number) {
+    super(name);
     this.skillPower = skillPower;
     this.spell = spell;
     this.magicShield = magicShield
