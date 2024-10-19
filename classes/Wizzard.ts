@@ -9,7 +9,7 @@ export class Wizzard extends Character {
     super(name);
     this.skillPower = skillPower;
     this.spell = spell;
-    this.magicShield = magicShield
+    this.magicShield = magicShield;
   }
 
 

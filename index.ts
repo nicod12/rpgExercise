@@ -1,7 +1,7 @@
 import { DarkWizzard } from "./classes/DarkWizzard";
 import { Wizzard } from "./classes/Wizzard";
 
-const khadgar = new Wizzard("Khadgar", 5, 50, "Bola de fuego", 5);
+const khadgar = new Wizzard("Khadgar", 5, 300, 150, "Bola de fuego", 30);
 
 khadgar.attack();
 khadgar.defend();
