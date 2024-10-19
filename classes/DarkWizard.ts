@@ -22,7 +22,7 @@ export class DarkWizard extends Wizard {
       return new DarkWizard(
         wizard.getName(),
         wizard.getLevel(),
-        wizard.getHp(),
+        wizard.getHp() * 2,
         wizard.getSkillpower() * 2,
         wizard.getSpell(),
         wizard.getMagicShield() * 2,

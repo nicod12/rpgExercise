@@ -15,6 +15,6 @@ export function tryEvolve(wizard: Wizard): DarkWizard | null {
 
 export function handleDarkWizardActions(darkWizard: DarkWizard): void {
   darkWizard.setSpell("Sombras oscuras");
-  darkWizard.attack();
+  darkWizard.darkAttack();
   darkWizard.defend();
 }
