@@ -3,10 +3,12 @@ import { handleDarkWizzardActions, tryEvolve } from "./utils/evolution";
 
 const khadgar = new Wizzard("Khadgar", 1, 300, 150, "Bola de fuego", 30);
 
+console.log(`${khadgar.getName()} es nivel ${khadgar.getLevel()}`);
+
 khadgar.attack();
 khadgar.defend();
 
-console.log(`${khadgar.getName()} es nivel ${khadgar.getLevel()}`);
+
 
 let darkKhadgar = tryEvolve(khadgar);
 
