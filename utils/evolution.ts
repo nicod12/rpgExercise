@@ -1,20 +1,20 @@
-import { DarkWizzard } from "../classes/DarkWizzard";
-import { Wizzard } from "../classes/Wizzard";
+import { DarkWizard } from "../classes/DarkWizard";
+import { Wizard } from "../classes/Wizard";
 
-export function tryEvolve(wizzard: Wizzard): DarkWizzard | null {
+export function tryEvolve(wizard: Wizard): DarkWizard | null {
 
-  if (wizzard.getLevel() === 10) {
-    let darkWizzard = DarkWizzard.evolveToDarkWizzard(wizzard);
-    console.log(`${wizzard.getName()} ha evolucionado a un mago oscuro!`);
-    return darkWizzard;
+  if (wizard.getLevel() === 10) {
+    let darkWizard = DarkWizard.evolveToDarkWizard(wizard);
+    console.log(`${wizard.getName()} ha evolucionado a un mago oscuro!`);
+    return darkWizard;
   } else {
     console.log(`Se requiere nivel 10 para evolucionar`);
     return null;
   }
 }
 
-export function handleDarkWizzardActions(darkWizzard: DarkWizzard): void {
-  darkWizzard.setSpell("Sombras oscuras");
-  darkWizzard.attack();
-  darkWizzard.defend();
+export function handleDarkWizardActions(darkWizard: DarkWizard): void {
+  darkWizard.setSpell("Sombras oscuras");
+  darkWizard.attack();
+  darkWizard.defend();
 }

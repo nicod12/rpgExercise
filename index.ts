@@ -1,9 +1,9 @@
-import { Wizzard } from "./classes/Wizzard";
-import { handleDarkWizzardActions, tryEvolve } from "./utils/evolution";
+import { Wizard } from "./classes/Wizard";
+import { handleDarkWizardActions, tryEvolve } from "./utils/evolution";
 
-const khadgar = new Wizzard("Khadgar", 1, 300, 150, "Bola de fuego", 30);
+const khadgar = new Wizard("Khadgar", 1, 300, 150, "Bola de fuego", 30);
 
-console.log(`${khadgar.getName()} es nivel ${khadgar.getLevel()}`);
+console.log(`estadisticas del personaje: tipo:${khadgar.getType()} nombre:${khadgar.getName()}, nivel: ${khadgar.getLevel()}, vida: ${khadgar.getHp()}, habilidad: ${khadgar.getSpell()}, poder de habilidad: ${khadgar.getSkillpower()} `);
 
 khadgar.attack();
 khadgar.defend();
@@ -13,7 +13,7 @@ khadgar.defend();
 let darkKhadgar = tryEvolve(khadgar);
 
 if (darkKhadgar) {
-  handleDarkWizzardActions(darkKhadgar);
+  handleDarkWizardActions(darkKhadgar);
 } else {
   console.log(`${khadgar.getName()} aun no ha evolucionado.`);
 }
@@ -28,7 +28,7 @@ khadgar.getLevel();
 darkKhadgar = tryEvolve(khadgar);
 
 if (darkKhadgar) {
-  handleDarkWizzardActions(darkKhadgar);
+  handleDarkWizardActions(darkKhadgar);
 } else {
   console.log(`${khadgar.getName()} aun no ha evolucionado.`);
 }

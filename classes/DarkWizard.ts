@@ -1,6 +1,6 @@
-import { Wizzard } from "./Wizzard";
+import { Wizard } from "./Wizard";
 
-export class DarkWizzard extends Wizzard {
+export class DarkWizard extends Wizard {
   private darkPower: number;
 
   private constructor(
@@ -17,15 +17,15 @@ export class DarkWizzard extends Wizzard {
   }
 
 
-  static evolveToDarkWizzard(wizzard: Wizzard): DarkWizzard | null {
-    if (wizzard.getLevel() >= 10) {
-      return new DarkWizzard(
-        wizzard.getName(),
-        wizzard.getLevel(),
-        wizzard.getHp(),
-        wizzard.getSkillpower() * 2,
-        wizzard.getSpell(),
-        wizzard.getMagicShield() * 2,
+  static evolveToDarkWizard(wizard: Wizard): DarkWizard | null {
+    if (wizard.getLevel() >= 10) {
+      return new DarkWizard(
+        wizard.getName(),
+        wizard.getLevel(),
+        wizard.getHp(),
+        wizard.getSkillpower() * 2,
+        wizard.getSpell(),
+        wizard.getMagicShield() * 2,
         25
       );
     }

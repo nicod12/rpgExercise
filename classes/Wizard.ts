@@ -1,12 +1,12 @@
-import { Character } from "./Character";
+import { Character, Rol } from "./Character";
 
-export class Wizzard extends Character {
+export class Wizard extends Character {
   protected skillPower: number;
   protected spell: string;
   protected magicShield: number;
 
   constructor(name: string, level: number, hp: number, skillPower: number, spell: string, magicShield: number) {
-    super(name);
+    super(name, Rol.Wizard);
     this.skillPower = skillPower;
     this.spell = spell;
     this.magicShield = magicShield;
