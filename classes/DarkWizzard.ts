@@ -29,7 +29,7 @@ export class DarkWizzard extends Wizzard {
         25
       );
     }
-    console.log(`${wizzard.getName()} no tiene suficiente nivel para evolucionar, se necesita ser nivel 10!.`);
+
     return null;
   }
 

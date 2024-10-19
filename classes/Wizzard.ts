@@ -45,6 +45,19 @@ export class Wizzard extends Character {
     console.log(`${this.name} activa una barrera que absorbe ${this.magicShield}% de daño`);
   }
 
+  public levelUp(): void {
+    if (this.getLevel() === 10) {
+      console.log("Ha alcanzado el nivel maximo!");
+
+    } else {
+      this.level++;
+      this.hp + 50;
+      this.skillPower + 5;
+      this.magicShield * 1.2;
+      console.log(`${this.name} ha subido al nivel ${this.level}!`);
+    }
+
+  }
 
 
 }

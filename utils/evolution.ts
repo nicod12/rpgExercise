@@ -1,0 +1,20 @@
+import { DarkWizzard } from "../classes/DarkWizzard";
+import { Wizzard } from "../classes/Wizzard";
+
+export function tryEvolve(wizzard: Wizzard): DarkWizzard | null {
+
+  if (wizzard.getLevel() === 10) {
+    let darkWizzard = DarkWizzard.evolveToDarkWizzard(wizzard);
+    return darkWizzard;
+  } else {
+    console.log(`Se requiere nivel 10 para evolucionar`);
+    return null;
+  }
+}
+
+export function handleDarkWizzardActions(darkWizzard: DarkWizzard): void {
+  console.log(`${darkWizzard.getName()} ha evolucionado a un Mago Oscuro!`);
+  darkWizzard.setSpell("Sombras oscuras");
+  darkWizzard.attack();
+  darkWizzard.defend();
+}

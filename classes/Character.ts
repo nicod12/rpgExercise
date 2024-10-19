@@ -23,5 +23,6 @@ export abstract class Character {
   public abstract defend(): void;
 
 
+
 }
 
