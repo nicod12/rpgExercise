@@ -51,9 +51,9 @@ export class Wizard extends Character {
 
     } else {
       this.level++;
-      this.hp + 50;
-      this.skillPower + 55;
-      this.magicShield * 1.2;
+      this.hp += 5;
+      this.skillPower += 3;
+      this.magicShield += 1;
       console.log(`${this.name} ha subido al nivel ${this.level}!`);
     }
 

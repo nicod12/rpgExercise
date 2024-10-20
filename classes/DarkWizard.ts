@@ -25,7 +25,7 @@ export class DarkWizard extends Wizard {
         wizard.getHp() * 2,
         wizard.getSkillpower() * 2,
         wizard.getSpell(),
-        wizard.getMagicShield() * 2,
+        wizard.getMagicShield(),
         25
       );
     }
